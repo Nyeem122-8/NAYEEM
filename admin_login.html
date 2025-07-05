@@ -13,7 +13,7 @@
 <body>
     <div class="login-box">
         <h2>Admin Login</h2>
-        <input type="password" id="password" placeholder="Enter Password (99999)">
+        <input type="password" id="password" placeholder="Enter Password (999999999999)">
         <button onclick="login()">Login</button>
         <div id="error" class="error"></div>
     </div>
@@ -21,7 +21,7 @@
     <script>
         function login() {
             const password = document.getElementById('password').value;
-            if (password === "99999") {
+            if (password === "00000000") {
                 localStorage.setItem('adminLoggedIn', 'true');
                 window.location.href = "admin_panel.html";
             } else {
